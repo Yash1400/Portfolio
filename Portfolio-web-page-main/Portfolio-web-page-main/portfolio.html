@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <style>
+    /* Add your custom styles here */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      color: #000000;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #9e8c5a;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      color: azure;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #69daff;
+    }
+    .r{
+        font-weight: 700;
+        color: white;
+    }
+
+    .q{
+      font-weight: bold;
+    }
+    .x{
+      font-weight: bold;
+      font-family: Georgia, 'Times New Roman', Times, serif;  
+    }
+    .s{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .a{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+    .l{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    .d{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    h1, h2, h3 {
+      font-weight: normal;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+    .b{
+      color: white;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+    .v{
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    .r{
+        font-weight: bold;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .profile-image img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 20px;
+      animation: fadeIn 1s ease;
+      transition: transform 0.3s ease;
+    }
+
+    
+    .about-me {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .about-me h2 {
+      margin-top: 0;
+    }
+
+    .about-me p {
+      margin-bottom: 10px;
+    }
+
+    .about-me p:last-child {
+      margin-bottom: 0;
+    }
+
+    .flex-container {
+      display: flex;
+      align-items: center;
+    }
+
+    footer {
+      background-color: #222;
+      padding: 20px;
+      color: #fff;
+      text-align: center;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+
+    .skill {
+      flex: 0 0 calc(50% - 10px);
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .project {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: scale(1.1);
+    }
+
+    /* Animation Keyframes */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="container">
+      <br>
+      <br>
+      <br>
+
+      <h1 class="s">Yash Jain</h1>
+      <div class="flex-container">
+        <div class="profile-image">
+          <br>
+          <img src="Yash.jpg" alt="Yash Jain">
+        </div>
+        <div class="about-me">
+          <h2 class="l">Crafting Elegant and Innovative Digital Solutions</h2>
+          <p class="a">Web Development | Python | C,C++ | Java | Web Development </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2 class="x">About Me</h2>
+      <p>My name is Yash Jain, and I am currently pursuing my Bachelor's degree in Engineering in the field of Information Technology at Shah and Anchor Kutchi Engineering College. I am currently in my Third year of studies.</p>
+      <p>I am passionate and enthusiastic for programming and technology, and I have developed a solid understanding of various programming languages and technologies. I am proficient in Python, which allows me to create efficient solutions for various problems. I also have a good grasp of web development, enabling me to design and develop engaging and user-friendly websites. Additionally, I am well-versed in C programming, which has enhanced my problem-solving skills and low-level programming knowledge.</p>
+      <p>Moreover, I am actively engaged in expanding my knowledge and skills in web development. I am continuously learning and exploring different frameworks and tools to create innovative and user-centric web applications.</p>
+      <p>My educational journey has equipped me with a strong foundation in Information Technology, and I am eager to learn new skills and apply my skills and knowledge to real-world projects. I am always seeking opportunities to further enhance my skills and contribute to the exciting field of technology.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container">
+      <h2 class="d">Skills</h2>
+      <br>
+      <div class="skills">
+        <div class="skill">
+          <h3>Web Development</h3>
+          <div class="skill-progress">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>Python</h3>
+          <div class="skill-progress">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>C Programming</h3>
+          <div class="skill-progress">
+            <div class="progress"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>App Development</h3>
+          <div class="skill-progress1">
+            <div class="progress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2 class="v">Projects</h2>
+      <br>
+      <div class="projects">
+        <div class="project">
+            <h3 class="q">Project 1 : A Railway Management System using Java and MySQL </h3>
+            <p>Me and my group mates have made a project on Railway Management which helps the users to find appropriate trains along with their timings.</p>
+          </div>
+          <div class="project">
+            <h3 class="q">Project 2 : Making a Railway Reservation System project using Python and MySQL</h3>
+            <p>We have also made a project on Railway Reservationwhich helps users to find appropriate trains and book it's tickets.</p>
+          </div>
+      </div>
+    </div>
+  </section>
+
+ <section id="contact">
+    <div class="container">
+      
+      <br>
+      <div class="contact-info">
+        <h2 class="r">Contact</h2>
+        <p>Email: y.jain60245@gmail.com</p>
+        <p class="b"><a href="https://www.linkedin.com/in/yash-jain-60885a205/">linkedin</a></p>
+        <p class="b"><a href="https://github.com/Yash1400">Github</a></p>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <p>&copy; 2023 Yash Jain All rights reserved.</p>
+  </footer>
+</body>
+</html>
